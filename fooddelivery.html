@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: #b9d52a;
+           
+           
+        }
+        .submit{
+            background-color: rgba(15, 227, 15, 0.875);
+        }
+        .reset{
+            background-color: rgb(231, 13, 13);
+        }
+        *{
+            margin-left:auto;
+            margin-right: auto;
+            margin-top:20px;
+            box-sizing: border-box;
+             
+        }
+        .helloform{
+           size: 10px;
+            height:auto;
+            width:auto;
+           
+        }
+         
+
+    </style>
+</head>
+<body>
+   
+    <table class="helloform"   cellpadding="10" cellspacing="0">
+        <tr bgcolor="#de8704">
+            <td colspan="2">Sign Up</td>
+        </tr>
+        <tr bgcolor="#222536">
+        <td align="right">First Name:</td>
+        <td><input type="text" placeholder="Enter your First Name"></td>
+        </tr>
+        <tr bgcolor="#222536">
+        <td align="right">Last Name:</td>
+        <td><input type="text" placeholder="Enter your Last Name"></td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">Date of Birth:</td>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male">Male
+                <input type="radio" name="gender" id="female">Female
+
+            </td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">County:</td>
+            <td>
+                <select>
+                    <option value="Country">Country</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="India">India</option>
+                    <option value="Country">I will not tell</option>
+
+                </select>
+   
+            </td>
+
+        </tr>
+        <tr bgcolor="#222538">
+            <td align="right">E-mail:</td>
+            <td><input type="mail" placeholder="abc@gmail.com"></td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">Phone:</td>
+            <td><input type="tel" placeholder="Phone Number"></td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">Password:</td>
+            <td><input type="password" placeholder="Abc123@#$"></td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td align="right">Conform Password:</td>
+            <td><input type="password" placeholder="Repeat your Password"></td>
+        </tr>
+        <tr bgcolor="#222536">
+            <td></td>
+            <td>
+                <input type="checkbox" name="termsandcondition" id="terms">"I Agree to the Terms and Codition"
+            </td>
+        </tr>
+        <tr bgcolor="#de8704">
+            <td colspan="2" align="right">
+                <input type="submit" class="submit" value="submit">
+                <input type="Reset" class="reset" value="Cancel">
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>

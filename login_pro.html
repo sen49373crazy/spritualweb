@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Login</title>
+    <link rel="stylesheet" href="login_pro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h1>Welcome Back</h1>
+            <p>Please enter your details to sign in.</p>
+        </div>
+
+        <form id="loginForm" class="login-form" novalidate>
+            <div class="input-group">
+                <input type="email" id="email" required autocomplete="off">
+                <label for="email">Email Address</label>
+                <i class="fa-regular fa-envelope input-icon"></i>
+                <div class="error-message">Please enter a valid email</div>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" required>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock input-icon"></i>
+                <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                <div class="error-message">Password is required</div>
+            </div>
+
+            <div class="form-actions">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="btn-login" id="loginBtn">
+                <span class="btn-text">Sign In</span>
+                <span class="loader"></span>
+            </button>
+
+            <div class="divider">
+                <span>Or continue with</span>
+            </div>
+
+            <div class="social-login">
+                <button type="button" class="btn-social google">
+                    <i class="fa-brands fa-google"></i>
+                </button>
+                <button type="button" class="btn-social github">
+                    <i class="fa-brands fa-github"></i>
+                </button>
+                <button type="button" class="btn-social apple">
+                    <i class="fa-brands fa-apple"></i>
+                </button>
+            </div>
+
+            <p class="signup-link">
+                Don't have an account? <a href="#">Sign up</a>
+            </p>
+        </form>
+    </div>
+
+    <script src="login_pro.js"></script>
+</body>
+</html>

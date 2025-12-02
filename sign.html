@@ -1,0 +1,200 @@
+<!-- Signup Page (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Stock Prediction App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <style>
+    /* Signup Page Styles (styles.css) */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      /* position: relative; */
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url("https://appreciatewealth.com/blog/wp-content/uploads/2023/07/adam-smigielski-K5mPtONmpHM-unsplash-1024x683.jpg");
+    }
+    .container {
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .card {
+      margin-top: 5%;
+      height: 50%;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+      /* backdrop-filter: blur(10px); */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      text-align: left;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input {
+      padding: 5px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+    }
+
+    .toggle-login {
+      margin-top: 15px;
+      color: #555;
+    }
+
+    .toggle-login a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .toggle-login a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Sign Up</h2>
+        <p class="subtitle">Join our AI-powered stock prediction platform!</p>
+        <form id="signupForm">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Enter your name"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Enter your email"
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            required
+            placeholder="Confirm your password"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            placeholder="Enter your phone number"
+          />
+
+          <label for="referral">Referral Code (Optional)</label>
+          <input
+            type="text"
+            id="referral"
+            name="referral"
+            placeholder="Enter referral code"
+          />
+
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="toggle-login">
+          Already have an account? <a href="#">Log in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    document
+      .getElementById("signupForm")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirm-password").value;
+
+        if (password !== confirmPassword) {
+          alert("Passwords do not match!");
+          return;
+        }
+
+        alert("Signup successful! Redirecting...");
+        // Implement redirection or further logic here
+      });
+  </script>
+</html>

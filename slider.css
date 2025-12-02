@@ -1,0 +1,16 @@
+body{
+    background-color: grey;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height:80vh;
+}
+.slider_container{
+    display:flex;
+    align-items: center;
+
+}
+.arrow_left{
+    size: 50px;
+}
+ 

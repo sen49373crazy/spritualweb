@@ -1,0 +1,70 @@
+ 
+#img
+    {margin-left: 40%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+        border: 2px solid;
+        height:250px;
+        border-radius:50%;
+        width: 250px;
+        border-color: plum;
+}
+#box{background-color: grey;
+    height:80px ;
+    width: 80px;
+    margin-left: 45%;
+
+}
+#box:hover{background-color: aliceblue;
+    transition:height 2s ease-in-out,width 2s linear,transform 3s ;
+    height:00px ;
+    width: 00px;
+    transform: rotate(180deg);
+
+    
+
+}
+#img:hover{transform: rotate(45);
+    box-shadow: 2px 2px 60px yellow;
+    animation-name: pic;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    filter: drop-shadow(2px 2px 60px rgb(241, 249, 23));
+    }
+@keyframes pic {
+    from{
+        box-shadow: 2px 2px 60px gold;
+    }
+    to{
+        box-shadow: 2px 2px 60px rgb(248, 225, 94);
+    }
+    
+} 
+ 
+#but:hover{
+    background-color:greenyellow;
+    border-color: green;
+}
+body{position: sticky;
+    background-image: url(math.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#fig{height: 50px;
+    width: 50px;
+    background-color: yellow;
+     
+
+}
+#fig:hover{
+    height: 50px;
+    width: 50px;
+    background-color:white;
+    transform:translateX(20deg)
+
+}
+
+

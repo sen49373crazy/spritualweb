@@ -1,0 +1,63 @@
+/*#box{display:block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;     
+   animation-name:shadow;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    position:sticky;
+    animation-iteration-count:infinite;
+    height:100px;
+    width:100px;
+    background-color: bisque;
+    transition:width 5s,height 5s;
+transition-delay:0s ;
+transition-timing-function:e;
+padding:0; 
+overflow:hidden;
+background-image:url(https://wallpapercave.com/wp/wp4717657.jpg);
+background-size:auto;
+}
+#box:hover{width: 500px;
+    height:500px;
+    color:black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size:large;
+    transform: rotate(180deg);
+    transform-origin:60%;
+    transform-style: preserve-3d;
+    
+
+     
+     
+
+}
+
+
+
+@keyframes shadow{
+    form{ 
+        background-color: bisque;}
+    to{ 
+        background-color: brown;
+    }
+}*/
+.table{
+    padding: 5px;
+     
+    border:5px solid black;
+    background-image:repeating-linear-gradient(to right ,skyblue,aqua,white);
+    column-span:2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 12px 12px 16px blueviolet;
+}
+#text::after{
+    content: " welcome back to my channel";
+
+}
+#text::before{
+    content:"❤️";
+}
